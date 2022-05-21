@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Header } from "./components/Header";
+import { Card } from "./components/Card";
+import content from "./cardContent.json";
 
-function App() {
+export const App = () => {
+  const [currentScore, setCurrentScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
+
+  const handleClick = (id) => {
+    content.forEach((el) => {
+      if (id === el.id && el.clicked === false) {
+        el.clicked = true;
+        setCurrentScore(currentScore + 1);
+      } else if (id === el.id && el.clicked === true) {
+        if (currentScore > highScore) {
+          setHighScore(currentScore);
+        }
+        setCurrentScore(0);
+        content.forEach((el) => (el.clicked = false));
+      }
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header currentScore={currentScore} highScore={highScore} />
+      {content.map((el) => (
+        <Card key={el.id} handleClick={handleClick} id={el.id} />
+      ))}
     </div>
   );
-}
-
-export default App;
+};
