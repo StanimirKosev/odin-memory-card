@@ -1,50 +1,110 @@
 [
   {
     "id": 1,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/3069/3069172.png",
+    "name": "Koala"
   },
   {
     "id": 2,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/3069/3069186.png",
+    "name": "Bird"
   },
   {
     "id": 3,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/616/616578.png",
+    "name": "Lion"
   },
   {
     "id": 4,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/616/616685.png",
+    "name": "Fox"
   },
   {
     "id": 5,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons.flaticon.com/png/512/2977/premium/2977327.png?token=exp=1653154163~hmac=66a539fa300eee950170bbcc212eb635",
+    "name": "Jellyfish"
   },
   {
     "id": 6,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/809/809052.png",
+    "name": "Bee"
   },
   {
     "id": 7,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/3069/3069224.png",
+    "name": "Elephant"
   },
   {
     "id": 8,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/1864/1864470.png",
+    "name": "Chicken"
   },
   {
     "id": 9,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/1864/1864475.png",
+    "name": "Whale"
   },
   {
     "id": 10,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/1864/1864473.png",
+    "name": "Dolphin"
   },
   {
     "id": 11,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons.flaticon.com/png/512/3359/premium/3359579.png?token=exp=1653153857~hmac=e79180446e7db3908500fe22eb4b04f9",
+    "name": "Deer"
   },
   {
     "id": 12,
-    "clicked": false
+    "clicked": false,
+    "image": "https://cdn-icons.flaticon.com/png/512/2977/premium/2977359.png?token=exp=1653154787~hmac=316eb0b29f08c82674591a986640b240",
+    "name": "Toucan"
+  },
+  {
+    "id": 13,
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/616/616617.png",
+    "name": "Owl"
+  },
+  {
+    "id": 14,
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/1864/1864491.png",
+    "name": "Octopus"
+  },
+  {
+    "id": 15,
+    "clicked": false,
+    "image": "https://cdn-icons.flaticon.com/png/512/1067/premium/1067840.png?token=exp=1653153782~hmac=2e789c89e0382bcd5476e6adba47574f",
+    "name": "Snake"
+  },
+  {
+    "id": 16,
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/826/826912.png",
+    "name": "Penguin"
+  },
+  {
+    "id": 17,
+    "clicked": false,
+    "image": "https://cdn-icons-png.flaticon.com/512/1010/1010028.png",
+    "name": "Crab"
+  },
+  {
+    "id": 18,
+    "clicked": false,
+    "image": "https://cdn-icons.flaticon.com/png/512/3196/premium/3196017.png?token=exp=1653153782~hmac=d5929ac878b7f3a5a91c14901ccb837e",
+    "name": "Chameleon"
   }
 ]

@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Header } from "./components/Header";
 import { Card } from "./components/Card";
-import content from "./cardContent.json";
+import cardContent from "./cardContent.json";
+import "./app.css";
 
 export const App = () => {
   const [currentScore, setCurrentScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [content, setContent] = useState(cardContent);
 
   const handleClick = (id) => {
     content.forEach((el) => {
@@ -22,11 +24,22 @@ export const App = () => {
     });
   };
 
+  useEffect(() => {
+    const shuffleArray = (arr) => arr.sort(() => Math.random() - 0.5);
+    setContent(shuffleArray(content));
+  });
+
   return (
-    <div>
+    <div className="app-grid">
       <Header currentScore={currentScore} highScore={highScore} />
       {content.map((el) => (
-        <Card key={el.id} handleClick={handleClick} id={el.id} />
+        <Card
+          key={el.id}
+          handleClick={handleClick}
+          id={el.id}
+          name={el.name}
+          image={el.image}
+        />
       ))}
     </div>
   );
